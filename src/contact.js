@@ -1,25 +1,40 @@
 const contact = () => {
     var documentNode = document.getElementById('content');
 
-    var headingNode = document.createElement('h1');
-    documentNode.appendChild(headingNode);
-    var textNode = document.createTextNode('Contact Us');
-    headingNode.appendChild(textNode);
+    var headingDIV = document.createElement('div');
+    documentNode.appendChild(headingDIV);
+    var headingTitle = document.createElement('h3');
+    headingDIV.appendChild(headingTitle);
+    var headingText = document.createTextNode('Contact Us');
+    headingTitle.appendChild(headingText);
 
-    var firstHeading = document.createElement('h2');
-    documentNode.appendChild(firstHeading);
-    var address = document.createTextNode('Address:');
-    firstHeading.appendChild(address);
+    var firstHeading = document.createElement('p');
+    headingDIV.appendChild(firstHeading);
+    var address1 = document.createTextNode('Victor\'s Restaurant')
+    firstHeading.appendChild(address1);
+    
+    var addressTwoHeading = document.createElement('p');
+    headingDIV.appendChild(addressTwoHeading);
+    var address2 = document.createTextNode('1000 Berkeley Way, Berkeley, CA 94704');
+    addressTwoHeading.appendChild(address2);
 
-    var secondHeading = document.createElement('h2');
-    documentNode.appendChild(secondHeading);
+    var secondHeading = document.createElement('h3');
+    headingDIV.appendChild(secondHeading);
     var contactPhone = document.createTextNode('By Phone:');
     secondHeading.appendChild(contactPhone);
+    var phoneStyle = document.createElement('p');
+    headingDIV.appendChild(phoneStyle);
+    var phoneNumber = document.createTextNode('(510) 555-5555');
+    phoneStyle.appendChild(phoneNumber);
 
-    var thirdHeading = document.createElement('h2');
-    documentNode.appendChild(thirdHeading);
+    var thirdHeading = document.createElement('h3');
+    headingDIV.appendChild(thirdHeading);
     var contactEmail = document.createTextNode('By Email:');
     thirdHeading.appendChild(contactEmail);
+    var emailStyle = document.createElement('p');
+    headingDIV.appendChild(emailStyle);
+    var emailAdd = document.createTextNode('email@emailaddress.com');
+    emailStyle.appendChild(emailAdd);
 
     // var imageNode = document.createElement('img');
     // documentNode.appendChild(imageNode);

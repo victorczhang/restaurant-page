@@ -10,6 +10,10 @@ document.getElementById('tab1').addEventListener('click', function() {
 
     document.getElementById('tab2').classList.remove('clicked');
     document.getElementById('tab3').classList.remove('clicked');
+
+    document.getElementById('content').classList.add('front-page');
+    document.getElementById('content').classList.remove('menu');
+    document.getElementById('content').classList.remove('contact');
     clear();
     pageLoad();
 });
@@ -20,6 +24,10 @@ document.getElementById('tab2').addEventListener('click', () => {
 
     document.getElementById('tab1').classList.remove('clicked');
     document.getElementById('tab3').classList.remove('clicked');
+
+    document.getElementById('content').classList.add('contact');
+    document.getElementById('content').classList.remove('front-page');
+    document.getElementById('content').classList.remove('menu');
     clear();
     contact();
 })
@@ -30,9 +38,14 @@ document.getElementById('tab3').addEventListener('click', () => {
 
     document.getElementById('tab1').classList.remove('clicked');
     document.getElementById('tab2').classList.remove('clicked');
+
+    document.getElementById('content').classList.add('menu');
+    document.getElementById('content').classList.remove('contact');
+    document.getElementById('content').classList.remove('front-page');
     clear();
     menu();
 })
 
 pageLoad();
+document.getElementById('tab1').classList.add('clicked');
 // nextPage();
